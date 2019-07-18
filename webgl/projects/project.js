@@ -75,7 +75,7 @@ class Project
         }
         else
         {
-            this.physicsPreLoader = new ResourceLoader([]);
+            this.physicsHandlersLoader = new ResourceLoader([]);
             this.physicsLoader = new ResourceLoader([]);
         }
     }
