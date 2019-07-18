@@ -1,0 +1,20 @@
+{
+    "assets":
+    {
+        "shaders":
+        [
+            {"vertex": "shaders/blur-postprocess-horizontal.vert", "fragment": "shaders/blur-postprocess-horizontal.frag"},
+            {"vertex": "shaders/blur-postprocess.vert", "fragment": "shaders/blur-postprocess.frag"}
+        ],
+        "meshes":
+        [
+            {"name": "tgcito", "path": "meshes/tgcito.obj"}
+        ],
+        "textures":
+        [
+            {"name": "bricks", "path": "textures/brick-wall.jpg"},
+            {"path": "textures/concrete.jpg"},
+            {"name": "tgcito", "path": "textures/uvw.jpg"}
+        ]
+    }
+}
