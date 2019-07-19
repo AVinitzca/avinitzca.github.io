@@ -70,7 +70,6 @@ class Project
                     'webgl/ammo/ammosphere.js',
                     'webgl/ammo/ammobox.js'
                 ]));
-            this.physicsLoader.derivesIn(this.physicsHandlersLoader);
             Projects.alreadyLoadedPhysics = true;
         }
         else
@@ -78,6 +77,7 @@ class Project
             this.physicsHandlersLoader = new ResourceLoader([]);
             this.physicsLoader = new ResourceLoader([]);
         }
+        this.physicsLoader.derivesIn(this.physicsHandlersLoader);
     }
 
     setAssetsLoader()
